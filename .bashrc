@@ -27,3 +27,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 #starship
 eval "$(starship init bash)"
+
+#oracle client
+export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_8:$LD_LIBRARY_PATH
+export PATH=/opt/oracle/instantclient_21_8:$PATH
