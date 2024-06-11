@@ -9,6 +9,9 @@ alias k=kubectl
 alias kx=kubectx
 alias ks=kubens
 
+#kubectl specific commands
+alias do="--dry-run=client -o yaml"    # k create deploy nginx --image=nginx $do
+
 #kubectl autocompletition under alias k
 source <(kubectl completion bash | sed 's/kubectl/k/g')
 
