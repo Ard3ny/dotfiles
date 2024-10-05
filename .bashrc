@@ -8,6 +8,8 @@ alias tf=terraform
 alias k=kubectl
 alias kx=kubectx
 alias ks=kubens
+#interactive colorized find with preview
+alias search="fzf --preview='batcat --color=always {}'"
 
 #kubectl specific commands
 alias do="--dry-run=client -o yaml"    # k create deploy nginx --image=nginx $do
