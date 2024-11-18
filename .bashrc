@@ -39,3 +39,6 @@ export PATH=/opt/oracle/instantclient_21_8:$PATH
 
 #velero autocompletation
 source <(velero completion bash)
+
+#smart cd 
+eval "$(zoxide init bash)"
