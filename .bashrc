@@ -40,5 +40,9 @@ export PATH=/opt/oracle/instantclient_21_8:$PATH
 #velero autocompletation
 source <(velero completion bash)
 
-#smart cd 
+#smart cd with zoxide
 eval "$(zoxide init bash)"
+
+#direnv for storing env variables in local dirs
+eval "$(direnv hook bash)"
+
