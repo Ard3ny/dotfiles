@@ -65,3 +65,7 @@ eval "$(zoxide init bash)"
 #direnv for storing env variables in local dirs
 eval "$(direnv hook bash)"
 
+#autocomplete for terraform
+#terraform -install-autocomplete
+complete -C /usr/bin/terraform terraform
+complete -C /usr/bin/terraform tf
